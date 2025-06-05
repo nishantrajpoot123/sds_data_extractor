@@ -4,13 +4,13 @@
   {
    "src": "app.py",
    "use": "@vercel/python",
-   "config": { "includeFiles": ["dist/**"] }
+   
   }
  ],
  "routes": [
   {
    "src": "/(.*)",
-   "dest": "/app.py"
+   "dest": "app.py"
   }
  ]
 }
