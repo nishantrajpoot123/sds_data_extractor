@@ -783,13 +783,4 @@ def health_check():
         'version': '2.1'
     })
 
-if __name__ == '__main__':
-    print("🚀 Starting Enhanced SDS Processing Flask Server v2.1...")
-    print(f"📁 Upload folder: {UPLOAD_FOLDER}")
-    print(f"📁 Processed folder: {PROCESSED_FOLDER}")
-    print("🌐 Server will be available at http://localhost:5000")
-    print("✨ Now supports multiple entries with same CAS number")
-    print("🎛️  Processing options:")
-    print("   - mergeDuplicates: Merge entries with same CAS number")
-    print("   - duplicateCheck: none|cas|description|both")
-    app.run(debug=True, host='0.0.0.0', port=5000)
+handler=app
